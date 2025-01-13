@@ -1,0 +1,17 @@
+[package]
+name = "rtodo"
+version = "0.1.0"
+edition = "2021"
+description = "A simple TODO CLI tool"
+authors = ["Your Name <wyattgill2009@gmail.com>"]
+
+[dependencies]
+clap = { version = "4.4", features = ["derive"] }
+
+[[bin]]
+name = "rtodo"
+path = "src/main.rs"
+
+[install]
+root = "/usr/local/bin"
+
